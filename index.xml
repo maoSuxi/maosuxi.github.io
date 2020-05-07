@@ -6,9 +6,28 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
+    <lastBuildDate>Thu, 07 May 2020 23:19:31 +0800</lastBuildDate>
     
 	<atom:link href="https://maosuxi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>Post</title>
+      <link>https://maosuxi.github.io/post/</link>
+      <pubDate>Thu, 07 May 2020 23:19:31 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/post/</guid>
+      <description>windows环境下的hugo博客搭建 1.安装hugo https://github.com/gohugoio/hugo/releases/上下载hugo，解压到自定义文件夹并添加到pth环境变量中 打开cmd进入hugo解压文件夹输入hugo version检查hogo是否安装成功如果出现Hugo Static Site Generator v0.65.3-211BA42A windows/amd64 BuildDate: 2020-02-23T09:58:40Z则已安装成功 2.用hugo创建博客 打开cmd输入hugo new site myblog(博客文件夹名称个人喜好) 3.下载并设置主题 https://themes.gohugo.io/选择自己喜好的主题下载(这里以m10c为例) cmd中进入所创建的博客根目录下的themes文件夹中 输入git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c下载 在这里计算机中git一定要安装好 cd themes/ dir 可以发现下载安装好的主题文件 4.在本地启动个人博客 博客根目录中输入 hugo server -t m10c &amp;ndash;buildDrafts 进入 http://localhost:1313/可以发现基本的博客已经搭建好了 5.创建文章 cmd下进入根目录 hugo new post/blog.md cd content/ dir	可以看见文件夹中的文件 可在content/post/blog.md文件中直接写博客 进入博客根目录 cd ../.. 然后 hugo server -t m10c &amp;ndash;buildDrafts 访问 http://localhost:1313/就有内容了 6.将个人博客部署到远程服务端 进入github新建一个仓，名称必须是自己的昵称 cmd博客根目录下 hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://maosuxi.github.io/&amp;rdquo; &amp;ndash;buildDrafts (新建仓的链接) 会生成一个public文件夹 cmd进入博客public文件夹下 git init git add .</description>
+    </item>
+    
+    <item>
+      <title>Blog</title>
+      <link>https://maosuxi.github.io/blog/</link>
+      <pubDate>Thu, 07 May 2020 23:11:14 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/blog/</guid>
+      <description>windows环境下的hugo博客搭建 1.安装hugo https://github.com/gohugoio/hugo/releases/上下载hugo，解压到自定义文件夹并添加到pth环境变量中 打开cmd进入hugo解压文件夹输入hugo version检查hogo是否安装成功如果出现Hugo Static Site Generator v0.65.3-211BA42A windows/amd64 BuildDate: 2020-02-23T09:58:40Z则已安装成功 2.用hugo创建博客 打开cmd输入hugo new site myblog(博客文件夹名称个人喜好) 3.下载并设置主题 https://themes.gohugo.io/选择自己喜好的主题下载(这里以m10c为例) cmd中进入所创建的博客根目录下的themes文件夹中 输入git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c下载 在这里计算机中git一定要安装好 cd themes/ dir 可以发现下载安装好的主题文件 4.在本地启动个人博客 博客根目录中输入 hugo server -t m10c &amp;ndash;buildDrafts 进入 http://localhost:1313/可以发现基本的博客已经搭建好了 5.创建文章 cmd下进入根目录 hugo new post/blog.md cd content/ dir	可以看见文件夹中的文件 可在content/post/blog.md文件中直接写博客 进入博客根目录 cd ../.. 然后 hugo server -t m10c &amp;ndash;buildDrafts 访问 http://localhost:1313/就有内容了 6.将个人博客部署到远程服务端 进入github新建一个仓，名称必须是自己的昵称 cmd博客根目录下 hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://maosuxi.github.io/&amp;rdquo; &amp;ndash;buildDrafts (新建仓的链接) 会生成一个public文件夹 cmd进入博客public文件夹下 git init git add .</description>
+    </item>
     
   </channel>
 </rss>
