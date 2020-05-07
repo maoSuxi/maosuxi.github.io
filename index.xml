@@ -6,10 +6,20 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 23:19:31 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 23:25:55 +0800</lastBuildDate>
     
 	<atom:link href="https://maosuxi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>枚举</title>
+      <link>https://maosuxi.github.io/%E6%9E%9A%E4%B8%BE/</link>
+      <pubDate>Thu, 07 May 2020 23:25:55 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/%E6%9E%9A%E4%B8%BE/</guid>
+      <description>枚举：定义有限个数对象的一种结构（多例设计），比多例设计更加简单，相较于多例设计使用枚举可以在程序编译时判断出实例化对象是否存在。 本质上是一个类，默认继承Enum类，枚举类中的构造方法不能采用非私有化定义（public无法使用），枚举对象要写在首行 protected Enum​(String name,int ordinal);//构造方法，name：名称，ordinal：序号 public final String name​();//获取名称 public final int ordinal​();//获取序号
+enum aColor{ 红色,绿色,蓝色;//枚举对象只能写在首行 } public class Demo18 { public static void main(String[] args) { // TODO Auto-generated method stub aColor c=aColor.红色;//实例化对象 System.out.println(c);	|switch (c)	{//enum可与switch结合 for(aColor b:aColor.values())//aColor.values()获取枚举数值	|	case RED : System.out.println(&amp;ldquo;红色&amp;rdquo;);break; {	|	case BLUE : System.out.println(&amp;ldquo;蓝色&amp;rdquo;);break; System.out.println(b);	|	case RGREEN: System.out.println(&amp;ldquo;绿色&amp;rdquo;);break; }	|	default:break;} }	} 枚举应用以使用这种为主 与多例设计相比下面的更加简单 enum aColor{ RED(&amp;ldquo;红色&amp;rdquo;),GREEN(&amp;ldquo;绿色&amp;rdquo;),BLUE(&amp;ldquo;蓝色&amp;rdquo;);//类内调用构造方法,且只能写在首行 private String title; private aColor(String title) { this.</description>
+    </item>
     
     <item>
       <title>Post</title>
