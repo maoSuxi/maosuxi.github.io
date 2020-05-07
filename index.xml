@@ -6,10 +6,20 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 23:25:55 +0800</lastBuildDate>
+    <lastBuildDate>Thu, 07 May 2020 23:55:04 +0800</lastBuildDate>
     
 	<atom:link href="https://maosuxi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>单例化和多例化设计</title>
+      <link>https://maosuxi.github.io/%E5%8D%95%E4%BE%8B%E5%8C%96%E5%92%8C%E5%A4%9A%E4%BE%8B%E5%8C%96%E8%AE%BE%E8%AE%A1/</link>
+      <pubDate>Thu, 07 May 2020 23:55:04 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/%E5%8D%95%E4%BE%8B%E5%8C%96%E5%92%8C%E5%A4%9A%E4%BE%8B%E5%8C%96%E8%AE%BE%E8%AE%A1/</guid>
+      <description>单例设计模式（多例设计模式） 控制实例化对象产生个数的设计操作 单例设计模式：只能有一个实例化对象（在程序运行中将一直存在的实例化对象，并且不会改变） 构造方法私有化，类内部提供static方法获取实例化对象，这样不管外部如何怎么操作就只有一个实例化对象 class Singleton{//懒汉式,在系统自动加载的时候就会自动提供有Singleton类的实例化对象|class Singleton{//饿汉式,在第一次使用的时候进行实例化对象处理 private static final Singleton ISTANCE =new Singleton(); //私有的Singleton属性|private static Singleton instance; private Singleton() {}//构造方法私有化	|private Singleton(){} public static Singleton getInstance() {	|public static Single getInstance(){ return ISTANCE;	|	if(instance==null) }	|	{	instance =new Singleton();	} public void print() {	|	return instance;	} System.out.println(&amp;ldquo;单例化设计&amp;rdquo;);	|public void print(){	}	|	System.out.println(&amp;ldquo;单例化设计&amp;rdquo;);} | }	|	} public class Demo16 {
+public static void main(String[] args) { // TODO Auto-generated method stub Singleton instance=null;//声明对象，并未实例化对象 instance=Singleton.</description>
+    </item>
     
     <item>
       <title>枚举</title>
