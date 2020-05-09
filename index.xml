@@ -6,10 +6,19 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Thu, 07 May 2020 23:55:04 +0800</lastBuildDate>
+    <lastBuildDate>Sat, 09 May 2020 23:59:49 +0800</lastBuildDate>
     
 	<atom:link href="https://maosuxi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>异常</title>
+      <link>https://maosuxi.github.io/%E5%BC%82%E5%B8%B8/</link>
+      <pubDate>Sat, 09 May 2020 23:59:49 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/%E5%BC%82%E5%B8%B8/</guid>
+      <description>异常：一种导致程序中断执行的指令流。 try{ //可能出现异常的语句 }[catch(异常类型 异常对象){ }catch(异常类型 异常对象){ }&amp;hellip;] [finally{ //不管是否异常都要执行 }] try&amp;hellip;catch、try&amp;hellip;catch&amp;hellip;finally、try&amp;hellip;finally 获取异常的全部信息可以使用异常类的printStackTrace()方法。 public class Test { public static void main(String [] args){ System.out.println(&amp;ldquo;1.&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;quot;); try { int x=Integer.parseInt(args[0]); int y=Integer.parseInt(args[1]); System.out.println(&amp;ldquo;2.&amp;mdash;&amp;mdash;&amp;mdash;-&amp;ldquo;+(x/y)); } catch(ArithmeticException e){ e.printStackTrace(); } System.out.println(&amp;ldquo;3.&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;quot;); } } 即便有了异常处理语句，但是如果没有进行正确的异常捕获，那么程序也会导致中断，finally类的代码依然会执行，这样就必须使用多个异常捕获 处理多个异常 public static void main(String [] args){ Scanner in=new Scanner(System.in); System.out.println(&amp;ldquo;1.&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;mdash;&amp;quot;); try { int x=in.nextInt(); int y=in.nextInt(); System.out.println(&amp;ldquo;2.&amp;mdash;&amp;mdash;&amp;mdash;-&amp;ldquo;+(x/y)); } catch(ArithmeticException e){ e.printStackTrace(); } catch(InputMismatchException e){ e.printStackTrace(); } catch(ArrayIndexOutOfBoundsException e){ //System.out.println(e); e.</description>
+    </item>
     
     <item>
       <title>单例化和多例化设计</title>
