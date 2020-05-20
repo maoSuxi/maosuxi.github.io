@@ -6,10 +6,19 @@
     <description>Recent content on My New Hugo Site</description>
     <generator>Hugo -- gohugo.io</generator>
     <language>en-us</language>
-    <lastBuildDate>Sat, 09 May 2020 23:59:49 +0800</lastBuildDate>
+    <lastBuildDate>Wed, 20 May 2020 23:54:43 +0800</lastBuildDate>
     
 	<atom:link href="https://maosuxi.github.io/index.xml" rel="self" type="application/rss+xml" />
     
+    
+    <item>
+      <title>函数式编程</title>
+      <link>https://maosuxi.github.io/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</link>
+      <pubDate>Wed, 20 May 2020 23:54:43 +0800</pubDate>
+      
+      <guid>https://maosuxi.github.io/%E5%87%BD%E6%95%B0%E5%BC%8F%E7%BC%96%E7%A8%8B/</guid>
+      <description>Lambda表达式：实现函数式的编程，可以避免面型对象编程之中繁琐的编程，避免结构化的繁琐 使用要求：函数中只有一个方法且为抽象方法，只能用于函数式接口 格式： ()-&amp;gt;{} (参数,参数)-&amp;gt;{} @FunctionalInterfa	//函数式接口 @FunctionalInterfa interface Imath{ public int add(int x,int y); } public class JavaDemo{ public void static void main(){ Imath math=(t1,t2)-&amp;gt;{ return t1+t2; }; System.out.println(math.add(10,20)); } } 当表达式中只有一行语句时可以简化如下 @FunctionalInterfa interface Imath{ public int add(int x,int y); } public class JavaDemo{ public void static void main(){ Imath math=(t1,t2)-&amp;gt; t1+t2 ; System.out.println(math.add(10,20)); } } 不使用lambda表达式 @FunctionalInterfa interface Imath{ public int add(int x,int y); } public class JavaDemo{ public void static void main(){ Imath math=new math(){ public int add(int x,int y){ return x+y; } }; System.</description>
+    </item>
     
     <item>
       <title>异常</title>
@@ -38,15 +47,6 @@ public static void main(String[] args) { // TODO Auto-generated method stub Sing
       <guid>https://maosuxi.github.io/%E6%9E%9A%E4%B8%BE/</guid>
       <description>枚举：定义有限个数对象的一种结构（多例设计），比多例设计更加简单，相较于多例设计使用枚举可以在程序编译时判断出实例化对象是否存在。 本质上是一个类，默认继承Enum类，枚举类中的构造方法不能采用非私有化定义（public无法使用），枚举对象要写在首行 protected Enum​(String name,int ordinal);//构造方法，name：名称，ordinal：序号 public final String name​();//获取名称 public final int ordinal​();//获取序号
 enum aColor{ 红色,绿色,蓝色;//枚举对象只能写在首行 } public class Demo18 { public static void main(String[] args) { // TODO Auto-generated method stub aColor c=aColor.红色;//实例化对象 System.out.println(c);	|switch (c)	{//enum可与switch结合 for(aColor b:aColor.values())//aColor.values()获取枚举数值	|	case RED : System.out.println(&amp;ldquo;红色&amp;rdquo;);break; {	|	case BLUE : System.out.println(&amp;ldquo;蓝色&amp;rdquo;);break; System.out.println(b);	|	case RGREEN: System.out.println(&amp;ldquo;绿色&amp;rdquo;);break; }	|	default:break;} }	} 枚举应用以使用这种为主 与多例设计相比下面的更加简单 enum aColor{ RED(&amp;ldquo;红色&amp;rdquo;),GREEN(&amp;ldquo;绿色&amp;rdquo;),BLUE(&amp;ldquo;蓝色&amp;rdquo;);//类内调用构造方法,且只能写在首行 private String title; private aColor(String title) { this.</description>
-    </item>
-    
-    <item>
-      <title>Post</title>
-      <link>https://maosuxi.github.io/post/</link>
-      <pubDate>Thu, 07 May 2020 23:19:31 +0800</pubDate>
-      
-      <guid>https://maosuxi.github.io/post/</guid>
-      <description>windows环境下的hugo博客搭建 1.安装hugo https://github.com/gohugoio/hugo/releases/上下载hugo，解压到自定义文件夹并添加到pth环境变量中 打开cmd进入hugo解压文件夹输入hugo version检查hogo是否安装成功如果出现Hugo Static Site Generator v0.65.3-211BA42A windows/amd64 BuildDate: 2020-02-23T09:58:40Z则已安装成功 2.用hugo创建博客 打开cmd输入hugo new site myblog(博客文件夹名称个人喜好) 3.下载并设置主题 https://themes.gohugo.io/选择自己喜好的主题下载(这里以m10c为例) cmd中进入所创建的博客根目录下的themes文件夹中 输入git clone https://github.com/vaga/hugo-theme-m10c.git themes/m10c下载 在这里计算机中git一定要安装好 cd themes/ dir 可以发现下载安装好的主题文件 4.在本地启动个人博客 博客根目录中输入 hugo server -t m10c &amp;ndash;buildDrafts 进入 http://localhost:1313/可以发现基本的博客已经搭建好了 5.创建文章 cmd下进入根目录 hugo new post/blog.md cd content/ dir	可以看见文件夹中的文件 可在content/post/blog.md文件中直接写博客 进入博客根目录 cd ../.. 然后 hugo server -t m10c &amp;ndash;buildDrafts 访问 http://localhost:1313/就有内容了 6.将个人博客部署到远程服务端 进入github新建一个仓，名称必须是自己的昵称 cmd博客根目录下 hugo &amp;ndash;theme=m10c &amp;ndash;baseUrl=&amp;quot;https://maosuxi.github.io/&amp;rdquo; &amp;ndash;buildDrafts (新建仓的链接) 会生成一个public文件夹 cmd进入博客public文件夹下 git init git add .</description>
     </item>
     
     <item>
